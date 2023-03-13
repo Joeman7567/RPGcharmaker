@@ -1,0 +1,28 @@
+﻿<Window x:Class="RPGcharmaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPGcharmaker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="nameInput" HorizontalAlignment="Left" Margin="7,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Height="97" FontSize="20"/>
+        <Label Content="Enter Name" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Height="76" Width="173" FontSize="25"/>
+        <Button x:Name="buttonUpdateName" Content="Make A character" HorizontalAlignment="Left" Margin="70,259,0,0" VerticalAlignment="Top" Height="35" Width="105" Click="buttonUpdateName_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,10,0,0" TextWrapping="Wrap" Text="Strength" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,73,0,0" TextWrapping="Wrap" Text="Dexterity" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,124,0,0" TextWrapping="Wrap" Text="Intelligence" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,185,0,0" TextWrapping="Wrap" Text="Stamina" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,251,0,0" TextWrapping="Wrap" Text="Charisma" VerticalAlignment="Top" Height="25" Width="70"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,314,0,0" TextWrapping="Wrap" Text="Wisdom" VerticalAlignment="Top" Height="25" Width="70"/>
+        <TextBlock x:Name="strengthText" HorizontalAlignment="Left" Margin="680,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock x:Name="dexterityText" HorizontalAlignment="Left" Margin="680,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock x:Name="intelligenceText" HorizontalAlignment="Left" Margin="680,124,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock x:Name="staminaText" HorizontalAlignment="Left" Margin="680,185,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBlock x:Name="charismaText" HorizontalAlignment="Left" Margin="680,251,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="70"/>
+        <TextBlock x:Name="wisdomText" HorizontalAlignment="Left" Margin="680,314,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="70"/>
+        <Button x:Name="re_rolls" Content="Re-Roll" HorizontalAlignment="Left" Margin="205,259,0,0" VerticalAlignment="Top" Height="35" Width="80" Click="re_rolls_Click"/>
+
+    </Grid>
+</Window>
