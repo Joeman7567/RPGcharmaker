@@ -7,22 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="nameInput" HorizontalAlignment="Left" Margin="7,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Height="97" FontSize="20"/>
-        <Label Content="Enter Name" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Height="76" Width="173" FontSize="25"/>
-        <Button x:Name="buttonUpdateName" Content="Make A character" HorizontalAlignment="Left" Margin="70,259,0,0" VerticalAlignment="Top" Height="35" Width="105" Click="buttonUpdateName_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="575,10,0,0" TextWrapping="Wrap" Text="Strength" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock HorizontalAlignment="Left" Margin="575,73,0,0" TextWrapping="Wrap" Text="Dexterity" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock HorizontalAlignment="Left" Margin="575,124,0,0" TextWrapping="Wrap" Text="Intelligence" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock HorizontalAlignment="Left" Margin="575,185,0,0" TextWrapping="Wrap" Text="Stamina" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock HorizontalAlignment="Left" Margin="575,251,0,0" TextWrapping="Wrap" Text="Charisma" VerticalAlignment="Top" Height="25" Width="70"/>
-        <TextBlock HorizontalAlignment="Left" Margin="575,314,0,0" TextWrapping="Wrap" Text="Wisdom" VerticalAlignment="Top" Height="25" Width="70"/>
-        <TextBlock x:Name="strengthText" HorizontalAlignment="Left" Margin="680,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock x:Name="dexterityText" HorizontalAlignment="Left" Margin="680,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock x:Name="intelligenceText" HorizontalAlignment="Left" Margin="680,124,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock x:Name="staminaText" HorizontalAlignment="Left" Margin="680,185,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70"/>
-        <TextBlock x:Name="charismaText" HorizontalAlignment="Left" Margin="680,251,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="70"/>
-        <TextBlock x:Name="wisdomText" HorizontalAlignment="Left" Margin="680,314,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="70"/>
-        <Button x:Name="re_rolls" Content="Re-Roll" HorizontalAlignment="Left" Margin="205,259,0,0" VerticalAlignment="Top" Height="35" Width="80" Click="re_rolls_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Jacobs Duck(then he waddled away).png"/>
+        </Grid.Background>
+        <TextBox x:Name="nameInput" HorizontalAlignment="Left" Margin="7,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Height="97" FontSize="20" Background="{x:Null}" FontWeight="Bold"/>
+        <Label Content="Enter Name" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Height="76" Width="173" FontSize="25" FontWeight="Bold"/>
+        <Button x:Name="buttonUpdateName" Content="Make A character" HorizontalAlignment="Left" Margin="18,278,0,0" VerticalAlignment="Top" Height="35" Width="104" Click="buttonUpdateName_Click" Background="{x:Null}" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,10,0,0" TextWrapping="Wrap" Text="Strength" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,73,0,0" TextWrapping="Wrap" Text="Dexterity" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,124,0,0" TextWrapping="Wrap" Text="Intelligence" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,185,0,0" TextWrapping="Wrap" Text="Stamina" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,251,0,0" TextWrapping="Wrap" Text="Charisma" VerticalAlignment="Top" Height="25" Width="70" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="575,314,0,0" TextWrapping="Wrap" Text="Wisdom" VerticalAlignment="Top" Height="25" Width="70" FontWeight="Bold"/>
+        <TextBlock x:Name="strengthText" HorizontalAlignment="Left" Margin="680,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock x:Name="dexterityText" HorizontalAlignment="Left" Margin="680,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock x:Name="intelligenceText" HorizontalAlignment="Left" Margin="680,124,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock x:Name="staminaText" HorizontalAlignment="Left" Margin="680,185,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="26" Width="70" FontWeight="Bold"/>
+        <TextBlock x:Name="charismaText" HorizontalAlignment="Left" Margin="680,251,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="70" FontWeight="Bold"/>
+        <TextBlock x:Name="wisdomText" HorizontalAlignment="Left" Margin="680,314,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25" Width="70" FontWeight="Bold"/>
+        <Button x:Name="re_rolls" Content="Re-Roll" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Height="46" Width="120" Click="re_rolls_Click" Background="{x:Null}" FontWeight="Bold"/>
+        <ListBox x:Name="listPotentialMembers" Margin="300,31,376,253" Background="{x:Null}" FontWeight="Bold">
+            <ListBoxItem Content="Jeff" FontWeight="Bold"/>
+            <ListBoxItem Content="Jake" FontWeight="Bold"/>
+            <ListBoxItem Content="John" FontWeight="Bold"/>
+            <ListBoxItem Content="Junior" FontWeight="Bold"/>
+            <ListBoxItem Content="Jack" FontWeight="Bold"/>
+        </ListBox>
+        <Label Content="Add Party Members       Stats" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="233" Margin="300,0,0,0" FontWeight="Bold"/>
+        <ListBox x:Name="listPartyMembers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="175,203,267,11" Background="{x:Null}" FontWeight="Bold"/>
 
     </Grid>
 </Window>
